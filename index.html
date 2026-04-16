@@ -1,70 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gavesh Rupasinghe | AI Student</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gavesh Rupasinghe — Portfolio</title>
+  <meta name="description" content="Portfolio — Gavesh Rupasinghe, AI student & developer">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
 
-    <div class="container">
-        <nav>
-            <div class="logo">Gavesh.</div>
-            <ul class="nav-links">
-                <li><a href="#expertise">Toolbox</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
 
-        <section class="hero">
-            <p>Artificial Intelligence Student</p>
-            <h1>GAVESH RUPASINGHE</h1>
-            <p class="intro-text">AI-driven and guided by design, I create innovative digital solutions with a focus on seamless user experiences. Currently pursuing my degree at the University of Plymouth.</p>
-        </section>
-
-        <div class="stats-bar">
-            <div class="stat-item"><h4>2+</h4><span>Years Logic</span></div>
-            <div class="stat-item"><h4>5+</h4><span>Built Projects</span></div>
-            <div class="stat-item"><h4>BSc</h4><span>Ongoing AI</span></div>
-        </div>
-
-        <h2 class="section-title" id="expertise">The Toolbox</h2>
-        <div class="grid">
-            <div class="card"><span class="tag">Modern Web</span><h3>Structuring</h3><p>Semantic applications and styling with fluid, responsive CSS systems.</p></div>
-            <div class="card"><span class="tag">Logic</span><h3>Client-Side</h3><p>Dynamic interfaces, real-time interactivity, and high-performance JS.</p></div>
-            <div class="card"><span class="tag">AI & Python</span><h3>Automation</h3><p>Developing backend logic, predictive models, and automation scripts.</p></div>
-            <div class="card"><span class="tag">Database</span><h3>Engineering</h3><p>PostgreSQL architecture and real-time data sync via Supabase.</p></div>
-        </div>
-
-        <h2 class="section-title" id="education">Education</h2>
-        <div class="grid">
-            <div class="card"><span class="tag">Plymouth University</span><h3>BSc Artificial Intelligence</h3><p>Current / Ongoing. Focus on Machine Learning & Neural Networks.</p></div>
-            <div class="card"><span class="tag">NSBM Green University</span><h3>Foundation in Computing</h3><p>Completed. Focus on Programming Logic & Architecture.</p></div>
-        </div>
-
-        <h2 class="section-title" id="contact">Get In Touch</h2>
-        <div class="contact-section">
-            <div class="contact-info">
-                <p style="color:var(--text-dim); margin-bottom: 2rem;">Let's start a conversation about your next AI-driven project.</p>
-                <a href="mailto:gaveshrupasinghe12@gmail.com">gaveshrupasinghe12@gmail.com</a>
-                <a href="tel:+94706957211">+94 70 695 7211</a>
-            </div>
-
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="2c3fda62-5f91-47f1-bbe5-9cde9f6ddc86">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <textarea name="message" rows="5" placeholder="Message Details" required></textarea>
-                <button type="submit">Send Transmission</button>
-            </form>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Gavesh<span class="dot">.</span></a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Designing the future through logic</p>
+          <h1>Gavesh Rupasinghe</h1>
+          <p class="lead">Artificial Intelligence student. I build elegant solutions with Python, C and modern web
+            technologies.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">Featured Work</a>
+            <a class="btn ghost" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <!-- Place your photo at assets/profile.jpg or update the src path -->
+          <img id="profilePhoto" src="assets/profile.jpg" alt="Gavesh Rupasinghe">
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat">
+          <h3>Ongoing</h3>
+          <p>BSc Artificial Intelligence</p>
+        </div>
+        <div class="stat">
+          <h3>2+ Years</h3>
+          <p>Logic & Coding</p>
+        </div>
+        <div class="stat">
+          <h3>5+</h3>
+          <p>Featured Projects</p>
+        </div>
+        <div class="stat">
+          <h3>Plymouth</h3>
+          <p>University Base</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Academic Journey</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>University of Plymouth</h3>
+            <p><strong>Degree:</strong> BSc (Hons) Artificial Intelligence</p>
+            <p><strong>Focus:</strong> Machine Learning & Neural Networks</p>
+          </div>
+          <div class="card">
+            <h3>NSBM Green University</h3>
+            <p><strong>Foundation:</strong> Foundation in Computing</p>
+            <p><strong>Focus:</strong> Programming Logic & Architecture</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Toolbox</h2>
+        <div class="grid">
+          <div class="card">
+            <span class="tag">Modern Web</span>
+            <h3>HTML & CSS</h3>
+            <p>Semantic markup and responsive systems.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Client</span>
+            <h3>JavaScript</h3>
+            <p>Interactive UIs and performant code.</p>
+          </div>
+          <div class="card">
+            <span class="tag">AI</span>
+            <h3>Python</h3>
+            <p>Models, automation and data processing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <span class="tag">Node.js</span>
+            <h3>Mobile Remote Controller</h3>
+            <p>Ultra-low latency Windows mirroring.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Python</span>
+            <h3>AI Trend Predictor</h3>
+            <p>ML model built during studies.</p>
+          </div>
+          <div class="card">
+            <span class="tag">JS</span>
+            <h3>Modern SaaS Dashboard</h3>
+            <p>Real-time management interface.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="card contact-info">
+            <h3>Let's start a conversation</h3>
+            <p>Email: <a href="mailto:gaveshrupasinghe12@gmail.com">gaveshrupasinghe12@gmail.com</a></p>
+            <p>Phone: <a href="tel:+94706957211">+94 70 695 7211</a></p>
+          </div>
+
+          <form id="contactForm" class="card contact-form" method="POST" action="https://api.web3forms.com/submit" enctype="multipart/form-data">
+            <!-- Web3Forms access key provided by user -->
+            <input type="hidden" name="access_key" value="web3forms2c3fda62-5f91-47f1-bbe5-9cde9f6ddc86">
+            <input type="hidden" name="subject" value="New contact from portfolio">
+
+            <label class="sr-only">Full name<input type="text" name="name" required placeholder="Full name"></label>
+            <label class="sr-only">Email<input type="email" name="email" required placeholder="Email"></label>
+            <label class="sr-only">Message<textarea name="message" rows="6" required placeholder="Message"></textarea></label>
+
+            <!-- File upload: place your photo in repo at assets/profile.jpg; this input allows attaching a file -->
+            <label>Attach file <input type="file" name="attachments[]" accept="image/*"></label>
+
+            <button type="submit" class="btn primary">Send</button>
+            <div id="formResult" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="socials">
+          <a href="https://github.com/gaveshrupasinghe1point0" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/gav-rupe-471a7a397" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="year"></span> Gavesh Rupasinghe</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
