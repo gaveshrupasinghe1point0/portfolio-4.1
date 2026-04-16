@@ -1,376 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gavesh Rupasinghe | AI Student & Developer</title>
-  <meta name="description"
-    content="Portfolio of Gavesh Rupasinghe, AI student at University of Plymouth. Specialist in Python, C, and Web Technologies.">
-
-  <!-- Modern Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Icons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Google Material Symbols (icons) -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavesh Rupasinghe | AI Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="#">Gavesh<span>.</span></a>
-    </div>
-
-    <ul class="nav-links">
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-socials">
-      <a href="https://github.com/gaveshrupasinghe1point0" target="_blank" rel="noopener noreferrer">
-        <i class='bx bxl-github'></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/gav-rupe-471a7a397?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
-        target="_blank" rel="noopener noreferrer">
-        <i class='bx bxl-linkedin'></i>
-      </a>
-    </div>
-
-    <div class="hamburger">
-      <i class='bx bx-menu'></i>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" class="section hero-section">
-    <div class="hero-content">
-      <p class="greeting">Designing the future through logic.</p>
-      <h1>Gavesh Rupasinghe.</h1>
-      <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Artificial Intelligence <span class="highlight">Student</span>
-      </h2>
-      <p class="hero-desc">
-        AI-driven and guided by design, I create innovative digital solutions with a focus on seamless user experiences.
-        Currently pursuing my degree at the University of Plymouth.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">Featured Work</a>
-        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="profile-photo-container">
-        <img src="profile.jpg" alt="Gavesh Rupasinghe">
-      </div>
-
-      <!-- Orbiting Icons -->
-      <div class="glass-card element-1">
-        <i class='bx bxl-javascript'></i>
-      </div>
-      <div class="glass-card element-2">
-        <i class='bx bxl-python'></i>
-      </div>
-      <div class="glass-card element-3">
-        <i class='bx bx-data'></i>
-      </div>
-      <div class="glass-card element-4">
-        <i class='bx bx-code-curly'></i>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Highlights Bar Section -->
-  <section class="highlights-bar fade-in">
-    <div class="container highlights-container">
-      <div class="highlight-item">
-        <i class='bx bxs-brain'></i>
-        <div class="highlight-text">
-          <span class="highlight-val">Ongoing</span>
-          <span class="highlight-label">BSc Artificial Intelligence</span>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <i class='bx bx-code-alt'></i>
-        <div class="highlight-text">
-          <span class="highlight-val">2+ Years</span>
-          <span class="highlight-label">Logic & Coding</span>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <i class='bx bx-rocket'></i>
-        <div class="highlight-text">
-          <span class="highlight-val">5+ Built</span>
-          <span class="highlight-label">Featured Projects</span>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <i class='bx bxs-map'></i>
-        <div class="highlight-text">
-          <span class="highlight-val">Plymouth</span>
-          <span class="highlight-label">University Base</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section education-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Academic Journey</h2>
-        <div class="line"></div>
-      </div>
+        <nav>
+            <div class="logo">Gavesh.</div>
+            <ul class="nav-links">
+                <li><a href="#expertise">Toolbox</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-      <div class="education-container fade-in move-on-scroll">
-        <div class="edu-card glass-card">
-          <div class="edu-header">
-            <i class='bx bxs-graduation'></i>
-            <h3>University of Plymouth</h3>
-          </div>
-          <table class="edu-table">
-            <tr>
-              <td><strong>Degree</strong></td>
-              <td>BSc (Hons) Artificial Intelligence</td>
-            </tr>
-            <tr>
-              <td><strong>Status</strong></td>
-              <td>Current / Ongoing</td>
-            </tr>
-            <tr>
-              <td><strong>Focus</strong></td>
-              <td>Machine Learning & Neural Networks</td>
-            </tr>
-          </table>
+        <section class="hero">
+            <p>Artificial Intelligence Student</p>
+            <h1>GAVESH RUPASINGHE</h1>
+            <p class="intro-text">AI-driven and guided by design, I create innovative digital solutions with a focus on seamless user experiences. Currently pursuing my degree at the University of Plymouth.</p>
+        </section>
+
+        <div class="stats-bar">
+            <div class="stat-item"><h4>2+</h4><span>Years Logic</span></div>
+            <div class="stat-item"><h4>5+</h4><span>Built Projects</span></div>
+            <div class="stat-item"><h4>BSc</h4><span>Ongoing AI</span></div>
         </div>
 
-        <div class="edu-card glass-card">
-          <div class="edu-header">
-            <i class='bx bxs-institution'></i>
-            <h3>NSBM Green University</h3>
-          </div>
-          <table class="edu-table">
-            <tr>
-              <td><strong>Foundation</strong></td>
-              <td>Foundation in Computing</td>
-            </tr>
-            <tr>
-              <td><strong>Status</strong></td>
-              <td>Completed</td>
-            </tr>
-            <tr>
-              <td><strong>Focus</strong></td>
-              <td>Programming Logic & Architecture</td>
-            </tr>
-          </table>
+        <h2 class="section-title" id="expertise">The Toolbox</h2>
+        <div class="grid">
+            <div class="card"><span class="tag">Modern Web</span><h3>Structuring</h3><p>Semantic applications and styling with fluid, responsive CSS systems.</p></div>
+            <div class="card"><span class="tag">Logic</span><h3>Client-Side</h3><p>Dynamic interfaces, real-time interactivity, and high-performance JS.</p></div>
+            <div class="card"><span class="tag">AI & Python</span><h3>Automation</h3><p>Developing backend logic, predictive models, and automation scripts.</p></div>
+            <div class="card"><span class="tag">Database</span><h3>Engineering</h3><p>PostgreSQL architecture and real-time data sync via Supabase.</p></div>
         </div>
-      </div>
+
+        <h2 class="section-title" id="education">Education</h2>
+        <div class="grid">
+            <div class="card"><span class="tag">Plymouth University</span><h3>BSc Artificial Intelligence</h3><p>Current / Ongoing. Focus on Machine Learning & Neural Networks.</p></div>
+            <div class="card"><span class="tag">NSBM Green University</span><h3>Foundation in Computing</h3><p>Completed. Focus on Programming Logic & Architecture.</p></div>
+        </div>
+
+        <h2 class="section-title" id="contact">Get In Touch</h2>
+        <div class="contact-section">
+            <div class="contact-info">
+                <p style="color:var(--text-dim); margin-bottom: 2rem;">Let's start a conversation about your next AI-driven project.</p>
+                <a href="mailto:gaveshrupasinghe12@gmail.com">gaveshrupasinghe12@gmail.com</a>
+                <a href="tel:+94706957211">+94 70 695 7211</a>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2c3fda62-5f91-47f1-bbe5-9cde9f6ddc86">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" rows="5" placeholder="Message Details" required></textarea>
+                <button type="submit">Send Transmission</button>
+            </form>
+        </div>
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Toolbox</h2>
-        <div class="line"></div>
-      </div>
-      <div class="skills-grid">
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class='bx bxl-html5 html-icon'></i>
-            <i class='bx bxl-css3 css-icon'></i>
-          </div>
-          <h3>Modern Web</h3>
-          <p>Structuring semantic applications and styling with fluid, responsive CSS systems.</p>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class='bx bxl-javascript js-icon'></i>
-          </div>
-          <h3>Client-Side Logic</h3>
-          <p>Dynamic user interfaces, real-time interactivity, and high-performance JS execution.</p>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class='bx bxl-python py-icon'></i>
-          </div>
-          <h3>AI & Automation</h3>
-          <p>Developing backend logic, predictive models, and automation scripts using Python.</p>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class='bx bxs-data supa-icon'></i>
-          </div>
-          <h3>Data Engineering</h3>
-          <p>Architecture design with PostgreSQL, real-time data sync via Supabase, and SQL mastery.</p>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class='bx bx-code-curly' style="color: #a8b9cc;"></i>
-          </div>
-          <h3>Low-Level Mastery</h3>
-          <p>Efficient C programming, mastering memory management, and algorithmic optimization.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="line"></div>
-      </div>
-
-      <div class="projects-grid">
-
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <div class="image-placeholder"
-              style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span>Node.js</span>
-              <span>WebSocket</span>
-              <span>C++</span>
-            </div>
-            <h3>Mobile Remote Controller</h3>
-            <p>Ultra-low latency Windows mirroring that turns your mobile into a remote trackpad and keyboard for your
-              PC.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <div class="image-placeholder"
-              style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80');">
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span>Python</span>
-              <span>TensorFlow</span>
-              <span>AI</span>
-            </div>
-            <h3>AI Trend Predictor</h3>
-            <p>Advanced ML model designed during my studies at Plymouth.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <div class="image-placeholder"
-              style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1426&q=80');">
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span>JavaScript</span>
-              <span>Supabase</span>
-              <span>SQL</span>
-            </div>
-            <h3>Modern SaaS Dashboard</h3>
-            <p>Real-time management interface with PostgreSQL backend.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="line"></div>
-      </div>
-
-      <div class="contact-content">
-
-        <div class="contact-info fade-in">
-          <h3>Let's start a conversation!</h3>
-          <p>I'm always open to collaborations and opportunities.</p>
-
-          <div class="contact-details">
-            <div class="detail-item">
-              <i class='bx bx-envelope'></i>
-              <span><a href="mailto:gaveshrupasinghe12@gmail.com">gaveshrupasinghe12@gmail.com</a></span>
-            </div>
-            <div class="detail-item">
-              <i class='bx bx-phone'></i>
-              <span><a href="tel:+94706957211">+94 70 695 7211</a></span>
-            </div>
-          </div>
-
-
-
-        </div>
-
-        <form class="contact-form fade-in" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" required placeholder="Full Name">
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" required placeholder="Email Address">
-          </div>
-          <div class="form-group">
-            <textarea id="message" rows="5" required placeholder="Message Details"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary submit-btn">
-            <span>Send Transmission</span>
-            <i class='bx bx-send'></i>
-          </button>
-        </form>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-
-      <div class="footer-social-block">
-        <a href="https://github.com/gaveshrupasinghe1point0" class="social-pill" target="_blank">
-          <i class='bx bxl-github'></i> <span>GitHub</span>
-        </a>
-
-        <a href="https://www.linkedin.com/in/gav-rupe-471a7a397?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
-          class="social-pill" target="_blank">
-          <i class='bx bxl-linkedin'></i> <span>LinkedIn</span>
-        </a>
-      </div>
-
-      <p>&copy; <span id="year"></span> Gavesh Rupasinghe. All rights reserved.</p>
-
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
