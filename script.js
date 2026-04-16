@@ -4,31 +4,69 @@
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.getElementById('navLinks');
+const mobileBackdrop = document.getElementById('mobileBackdrop');
+
+function closeMobileNav() {
+  if (!navLinks) return;
+  navLinks.classList.remove('active');
+  const icon = hamburger?.querySelector('i');
+  if (icon) {
+    icon.classList.remove('bx-x');
+    icon.classList.add('bx-menu');
+  }
+  if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+  if (mobileBackdrop) mobileBackdrop.setAttribute('aria-hidden', 'true');
+}
+
+function openMobileNav() {
+  if (!navLinks) return;
+  navLinks.classList.add('active');
+  const icon = hamburger?.querySelector('i');
+  if (icon) {
+    icon.classList.remove('bx-menu');
+    icon.classList.add('bx-x');
+  }
+  if (hamburger) hamburger.setAttribute('aria-expanded', 'true');
+  if (mobileBackdrop) mobileBackdrop.setAttribute('aria-hidden', 'false');
+}
 
 if (hamburger) {
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    const icon = hamburger.querySelector('i');
     if (navLinks.classList.contains('active')) {
-      icon.classList.remove('bx-menu');
-      icon.classList.add('bx-x');
+      closeMobileNav();
     } else {
-      icon.classList.remove('bx-x');
-      icon.classList.add('bx-menu');
+      openMobileNav();
+    }
+  });
+
+  // Allow keyboard toggle (Enter / Space)
+  hamburger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      hamburger.click();
     }
   });
 }
 
+// Backdrop click closes mobile nav
+if (mobileBackdrop) {
+  mobileBackdrop.addEventListener('click', () => {
+    closeMobileNav();
+  });
+}
+
+// Close on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeMobileNav();
+  }
+});
+
 // Close mobile nav when a link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    const icon = hamburger?.querySelector('i');
-    if (icon) {
-      icon.classList.remove('bx-x');
-      icon.classList.add('bx-menu');
-    }
+    closeMobileNav();
   });
 });
 
@@ -42,12 +80,13 @@ const moveElements = document.querySelectorAll('.move-on-scroll');
 
 window.addEventListener('scroll', () => {
   // Navbar shrink
+  const sidePad = window.innerWidth <= 768 ? '5%' : '10%';
   if (window.scrollY > 50) {
-    navbar.style.padding = '15px 10%';
+    navbar.style.padding = `15px ${sidePad}`;
     navbar.style.background = 'rgba(8, 2, 18, 0.95)';
     navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.8)';
   } else {
-    navbar.style.padding = '20px 10%';
+    navbar.style.padding = `20px ${sidePad}`;
     navbar.style.background = 'rgba(8, 2, 18, 0.85)';
     navbar.style.boxShadow = 'none';
   }
